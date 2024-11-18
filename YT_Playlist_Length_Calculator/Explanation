@@ -1,0 +1,33 @@
+Explanation of the Code
+Definition and Initialization:
+
+The program starts by defining an array, videoDuration, containing the durations of individual videos in seconds.
+
+int[] videoDuration = {240, 180, 210, 300, 150, 270};
+Calculating Total Playlist Length:
+
+The method calculateTotalLength(int[] durations) takes the array of video durations as input.
+A for loop iterates through the array, summing up all durations into a variable totalDuration.
+
+public static int calculateTotalLength(int[] durations) {
+    int totalDuration = 0;
+    for (int duration : durations) {
+        totalDuration += duration;
+    }
+    return totalDuration;
+}
+Conversion of Total Duration:
+
+The total duration (in seconds) is converted into a more user-friendly format (hours, minutes, and seconds):
+Hours: totalLengthInSeconds / 3600
+Minutes: (totalLengthInSeconds % 3600) / 60
+Seconds: totalLengthInSeconds % 60
+
+int hours = totalLengthInSeconds / 3600;
+int minutes = (totalLengthInSeconds % 3600) / 60;
+int seconds = totalLengthInSeconds % 60;
+Output:
+
+The formatted playlist length is printed to the console:
+
+System.out.println("Total Playlist Length: " + hours + " hours, " + minutes + " minutes, " + seconds + " seconds");
