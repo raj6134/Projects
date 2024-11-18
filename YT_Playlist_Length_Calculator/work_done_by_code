@@ -1,0 +1,6 @@
+Work Done by the Code
+Input: An array of video durations (in seconds).
+Processing:
+Summing all durations to find the total playlist length.
+Converting the total length from seconds to hours, minutes, and seconds.
+Output: The total playlist length in the format: <hours> hours, <minutes> minutes, <seconds> seconds.
