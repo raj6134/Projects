@@ -1,6 +1,6 @@
 public class PlaylistLengthCalculator {
     public static void main(String[] args) {
-        // Define the durations of songs in seconds 
+        // Define the durations of songs in seconds
         int[] videoDuration = {240, 180, 210, 300, 150, 270}; // Example durations in seconds
 
         // Calculate the total length of the playlist
